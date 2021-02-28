@@ -1,0 +1,138 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  background-color: #f5f3ef;
+
+  body {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+
+    #app {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      padding: 75px 0;
+
+      > div {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        background: white;
+        border-radius: 5px;
+        padding: 35px 20px;
+      }
+
+      .filtersModule {
+        margin: 0 0 20px 0;
+        span {
+          padding: 5px;
+          border: 1px solid black;
+          margin-right: 10px;
+          cursor: pointer;
+          transition: all 0.5 ease-out;
+          &:hover {
+            background-color: #f5f3ef;
+          }
+        }
+      }
+
+      .error {
+        color: red;
+      }
+
+      .commentsModule {
+
+        .title {
+          font-size: 20px;
+          font-weight: 400;
+          margin-top: 0;
+        }
+
+        .commentsHistory {
+          margin-bottom: 30px;
+
+          > div {
+            display: flex;
+            padding: 10px 5px;
+
+            img {
+              width: 40px;
+              padding: 0 10px 10px 10px;
+            }
+
+            &:nth-child(odd) {
+              background-color: #f4f2ed;
+            }
+
+            a {
+              cursor: pointer;
+              color: #c73b4e;
+              text-decoration: underline;
+            }
+
+            div {
+              display: flex;
+              flex-direction: column;
+              padding-right: 50px;
+              width: 150px;
+              word-break: break-word;
+            }
+
+            p {
+              margin: 2px;
+              word-break: break-word;
+            }
+          }
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-weight: 400;
+          }
+
+          input, textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #c73b4e;
+            border-radius: 1px;
+
+            &:focus {
+              outline: none;
+              border:1px solid red;
+              box-shadow: 0 0 10px #719ECE;
+              background-color: #feffc8;
+            }
+          }
+
+          textarea {
+            min-height: 200px;
+          }
+
+          button {
+            background-color: #c73b4e;
+            width: 180px;
+            padding: 8px 17px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: all 0.5 ease-out;
+            &:hover {
+              background-color: #f4f2ed;
+              color: #c73b4e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

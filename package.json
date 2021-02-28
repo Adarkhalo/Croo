@@ -1,0 +1,36 @@
+{
+  "name": "croo-technical-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "python3 api/main.py | react-scripts start | cat",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "md5": "^2.3.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^2.0.5",
+    "sass": "^1.30.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Adarkhalo/croo-technical-assignment.git"
+  },
+  "author": "Emmanuel Chaput",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Adarkhalo/croo-technical-assignment/issues"
+  },
+  "homepage": "https://gitlab.com/Adarkhalo/croo-technical-assignment#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
